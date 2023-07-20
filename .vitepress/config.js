@@ -82,15 +82,19 @@ function createNav() {
       items:[
         {
           text: 'python基础',
-          link: '',
+          link: '/note/python/01_python_base',
+        },
+        {
+          text: '数学基础',
+          link: '/note/math/02_math_base',
         },
         {
           text: '机器学习',
-          link: '',
+          link: '/note/machine_learning/03_machine_base',
         },
         {
           text: '深度学习',
-          link: '',
+          link: '/note/deep_learning/3_pytorh',
         },
       ]
 
@@ -138,6 +142,54 @@ function createNav() {
 
 function createSidebar() {
   return {
+    '/note/math/':[
+      {
+        text: 'math基础',
+        children: [
+          {
+            text: 'math基础',
+            link: '/note/math/02_math_base',
+          },
+        ],       
+      }
+    ],
+    '/note/python/':[
+      {
+        text: 'python基础',
+        children: [
+          {
+            text: 'python',
+            link: '/note/python/01_python_base',
+          },
+        ],       
+      }
+    ],
+    '/note/machine_learning/':[
+      {
+        text: '机器学习',
+        children: [
+          {
+            text: '机器学习基础',
+            link: '/note/machine_learning/03_machine_base',
+          },
+        ],       
+      }
+    ],
+    '/note/deep_learning/':[
+      {
+        text: '深度学习',
+        children: [
+          {
+            text: '1_pytorch',
+            link: '/note/deep_learning/3_pytorh',
+          },
+          {
+            text: '2_mmlab',
+            link: '/note/deep_learning/4_MMLab',
+          }
+        ],       
+      }
+    ],
     '/intresting/': [
       {
         text: '有趣的ChatGPT',
