@@ -3,7 +3,7 @@
   "version": "1.5.3",
   "main": "index.js",
   "repository": "https://gitee.com/liitle_whale/clintsfy-doc",
-  "author": "阿源 <clint_sfy@qq.com>",
+  "author": "阿源 <clint_sfy@163.com>",
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev",
