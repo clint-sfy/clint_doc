@@ -85,10 +85,6 @@ function createNav() {
           link: '/note/python/01_python_base',
         },
         {
-          text: '数学基础',
-          link: '/note/math/02_math_base',
-        },
-        {
           text: '机器学习',
           link: '/note/machine_learning/03_machine_base',
         },
@@ -142,17 +138,6 @@ function createNav() {
 
 function createSidebar() {
   return {
-    '/note/math/':[
-      {
-        text: 'math基础',
-        children: [
-          {
-            text: 'math基础',
-            link: '/note/math/02_math_base',
-          },
-        ],       
-      }
-    ],
     '/note/python/':[
       {
         text: 'python基础',
