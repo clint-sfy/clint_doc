@@ -1,9 +1,3 @@
-<!--
- * @Author: clint_sfy
- * @Date: 2023-01-22 19:15:19
- * @LastEditors: clint_sfy
- * @LastEditTime: 2023-01-22 19:44:42
--->
 <template>
   <a
     class="nav-bar-title"

@@ -5,12 +5,12 @@
 module.exports = {
   title: '阿源编程',
   lang: 'zh-CN',
-  description: '一个用于展示项目和记录笔记的web网站',
+  description: '一个用于展示项目文档和个人笔记的web网站',
   head: createHead(),
   themeConfig: {
     repo: 'jekip/naive-ui-admin',
     docsRepo: 'jekip/naive-ui-admin-docs',
-    logo: '/logo.png',
+    logo: '/logo64.png',
     docsBranch: 'main',
     editLinks: true,
     editLinkText: '为此页提供修改建议',
@@ -43,7 +43,7 @@ function createHead() {
       },
     ],
     ['meta', { name: 'keywords', content: 'vue vben admin docs' }],
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon32.ico' }],
   ];
 }
 
@@ -53,12 +53,60 @@ function createHead() {
 function createNav() {
   return [
     {
-      text: '文档',
+      text: '首页',
       link: '/guide/introduction'
     },
     {
-      text: '组件',
-      link: '/components/mapLocus',
+      text: '项目文档',
+      link: '/project/index',
+    },
+    {
+      text: '好玩的',
+      items:[
+        {
+          text: '开源项目',
+          link: '',
+        },
+        {
+          text: 'ChatGpt',
+          link: '/intresting/ChatGPT',
+        },
+        {
+          text: 'AI行业对话',
+          link: '/intresting/AI_talk',
+        },
+      ]
+    },
+    {
+      text: '科研笔记',
+      items:[
+        {
+          text: 'python基础',
+          link: '',
+        },
+        {
+          text: '机器学习',
+          link: '',
+        },
+        {
+          text: '深度学习',
+          link: '',
+        },
+      ]
+
+    },
+    {
+      text: '精读论文',
+      items:[
+        {
+          text: 'Cv',
+          link: '',
+        },
+        {
+          text: 'NLP',
+          link: '',
+        },
+      ]
     },
     {
       text: '相关链接',
@@ -69,29 +117,16 @@ function createNav() {
         },
         {
           text: '项目源码',
-          link: 'https://gitee.com/kevin_chou/qdpz',
+          link: 'https://gitee.com/clint_sfy/clint_doc',
         },
         {
           text: '文档源码',
-          link: 'https://gitee.com/kevin_chou/qdpz-docs',
+          link: 'https://gitee.com/clint_sfy/clint_doc',
         },
-        {
-          text: '点赞支持',
-          link: 'https://gitee.com/kevin_chou/qdpz/stargazers',
-        }
-      ],
-    },
-    {
-      text: '实用笔记',
-      items: [
-        {
-          text: 'ChatGPT',
-          link: '/mybatisplus',
-        },
-        {
-          text: 'Docker',
-          link: '/docker/docker_install',
-        }
+		{
+		  text: '点赞支持',
+		  link: 'https://gitee.com/clint_sfy/clint_doc/stargazers',
+		}
       ],
     },
     {
@@ -103,81 +138,29 @@ function createNav() {
 
 function createSidebar() {
   return {
-    '/docker/':[
+    '/intresting/': [
       {
-        text: '知识点',
+        text: '有趣的ChatGPT',
         children: [
           {
-            text: '安装',
-            link: '/docker/docker_install',
-          },{
-            text: '部署',
-            link: '/docker/docker_build',
-          } ,
-        ],
-
-      },
-    ],
-
-    '/components/': [
-      {
-        text: '常用组件',
-        children: [
-          {
-            text: '轨迹回放',
-            link: '/components/mapLocus',
-          },{
-            text: '图表展示',
-            link: '/components/ucharts',
-          } ,
-          {
-            text: '自定义相机',
-            link: '/components/camera',
-          },
-          {
-            text: '聊天室',
-            link: '/components/chat',
-          },
-          {
-            text: '自定义键盘',
-            link: '/components/keyboard',
+            text: 'ChatGPT',
+            link: '/intresting/ChatGPT',
           }
-        ],
+        ],       
       },
-	  {
-	    text: '样式组件',
-	    children: [
-	      {
-	        text: '证件识别',
-	        link: '/components/cssDiscern',
-	      },
-		  {
-		    text: '排行榜',
-		    link: '/components/cssRankingList',
-		  },
-		  {
-		    text: '登录合集',
-		    link: '/components/cssLogin',
-		  }
-	    ],
-	  },
-	  {
-	    text: '付费组件',
-	    children: [
-	      {
-	        text: '智能抠图',
-	        link: '/components/pay_matting',
-	      },
-		  {
-		    text: '海报编辑器',
-		    link: '/components/pay_poster',
-		  }
-	    ],
-	  },
+      {
+        text: '有趣的AI',
+        children: [
+          {
+            text: 'AI行业对话',
+            link: '/intresting/AI_talk',
+          }
+        ],       
+      },
     ],
     '/': [
       {
-        text: '基础',
+        text: '首页',
         children: [
           {
             text: '介绍',
@@ -186,30 +169,6 @@ function createSidebar() {
           {
             text: '开始',
             link: '/guide/',
-          },
-          {
-            text: '项目配置',
-            link: '/guide/settings',
-          },
-          {
-            text: '路由',
-            link: '/guide/router',
-          },
-          {
-            text: '数据&联调',
-            link: '/guide/mock',
-          },
-          {
-            text: '组件使用',
-            link: '/guide/component',
-          },
-          {
-            text: '样式',
-            link: '/guide/design',
-          },
-          {
-            text: '构建&部署',
-            link: '/guide/deploy',
           },
         ],
       }

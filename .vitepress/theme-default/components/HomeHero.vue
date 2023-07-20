@@ -10,11 +10,11 @@
 
     <h1 v-if="hasHeroText" id="main-title" class="title">{{ heroText }}</h1>
 	<div class="gitBox">
-		<a href="https://gitee.com/clint_sfy/covid19_visualization" target="_blank">
-			<img src="https://svg.hamm.cn/gitee.svg?type=star&user=clint_sfy&project=covid19_visualization_vue" />
+		<a href="https://gitee.com/clint_sfy/clint_doc" target="_blank">
+			<img src="https://svg.hamm.cn/gitee.svg?type=star&user=clint_sfy&project=clint_doc" />
 		</a>
-		<a href="https://gitee.com/clint_sfy/covid19_visualization/members" target="_blank">
-			<img src="https://svg.hamm.cn/gitee.svg?type=fork&user=clint_sfy&project=covid19_visualization_vue"/>
+		<a href="https://gitee.com/kevin_chou/qdpz/members" target="_blank">
+			<img src="https://svg.hamm.cn/gitee.svg?type=fork&user=clint_sfy&project=clint_doc"/>
 		</a>
 	</div>
     <p v-if="hasTagline" class="description">{{ tagline }}</p>

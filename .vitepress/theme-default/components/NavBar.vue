@@ -17,7 +17,7 @@
       <div v-if="repo" class="item">
         <a
           class="nav-btn"
-          href="https://gitee.com/kevin_chou/qdpz"
+          href="https://gitee.com/clint_sfy/clint_doc"
           target="_blank"
           aria-label="View GitHub Repo"
         >
