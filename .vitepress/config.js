@@ -65,7 +65,7 @@ function createNav() {
       items:[
         {
           text: '开源项目',
-          link: '',
+          link: '/intresting/Project',
         },
         {
           text: 'ChatGpt',
@@ -176,6 +176,15 @@ function createSidebar() {
       }
     ],
     '/intresting/': [
+      {
+        text: '开源项目',
+        children: [
+          {
+            text: 'github_project',
+            link: '/intresting/Project',
+          }
+        ],       
+      },
       {
         text: '有趣的ChatGPT',
         children: [

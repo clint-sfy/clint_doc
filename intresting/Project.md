@@ -2,9 +2,9 @@
 
 ## 1. freegpt-webui
 
-::: tip 关于本项目
+- tip 关于本项目
 - https://github.com/ramonvc/freegpt-webui
-:::
+
 ::: warning 注意
 - 需要魔法
 - Get your API key from the ChimeraGPT Discord.
@@ -38,24 +38,26 @@ git checkout chimeragpt-version
 
 pip install -r requirements.txt
 ```
+```
 项目根目录创建名为.env文件，写入：
 CHIMERA_API_KEY=<API-Key>  
+```
 ```bash
 python run.py
 ```
 ## 2. gpt_academic   gpt版本
-::: tip 关于本项目
+- tip 关于本项目
 - https://github.com/binary-husky/gpt_academic
-:::
+
 ::: warning 注意
 - 需要魔法
 - Get your API key from the OPEN_AI.
 :::
 
 ## 2. gpt_academic   chatglm2-6B版本
-::: tip 关于本项目
+- tip 关于本项目
 - https://github.com/binary-husky/gpt_academic
-:::
+
 ::: warning 注意
 - 不需要魔法
 - 需要显卡A5000或3090
