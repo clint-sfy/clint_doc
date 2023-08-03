@@ -1578,7 +1578,7 @@ axes[1].axvline(0,color='grey',linewidth=2)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图1.png)
 
 ```python
 fig,ax = plt.subplots()
@@ -1589,7 +1589,7 @@ for bar,height in zip(v_bars,y):  # 大于0一个颜色 ，小于0一个颜色
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图2.png)
 
 ```python
 x = np.linspace(0,10,200)
@@ -1602,7 +1602,7 @@ ax.plot(x,y_mean,color='black')
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图3.png)
 
 ```python
 mean_values = [1,2,3]
@@ -1618,7 +1618,7 @@ plt.xticks(x_pos,bar_label)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图4.png)
 
 ```python
 x1 = np.array([1,2,3])
@@ -1637,7 +1637,7 @@ plt.ylim(-1,len(x1)+1)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图5.png)
 
 ```python
 green_data = [1, 2, 3]
@@ -1655,7 +1655,7 @@ plt.bar([p+width*2 for p in pos],red_data,width,alpha=0.5,color='r',label=labels
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图6.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图6.png)
 
 ```python
 data = range(200, 225, 5)
@@ -1672,7 +1672,7 @@ for b,d in zip(bars,data):
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图7.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图7.png)
 
 ```python
 mean_values = range(10,18)
@@ -1692,7 +1692,7 @@ plt.bar(x_pos,mean_values,color = cmap2.to_rgba(mean_values))
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图8.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图8.png)
 
 ```python
 patterns = ('-', '+', 'x', '\\', '*', 'o', 'O', '.')
@@ -1709,7 +1709,7 @@ for bar,pattern in zip(bars,patterns):
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图9.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图9.png)
 
 ### 4. 盒图
 
@@ -1726,7 +1726,7 @@ plt.xlabel('x')
 plt.title('box plot')
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/盒图1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/盒图1.png)
 
 ```python
 tang_data = [np.random.normal(0,std,100) for std in range(1,4)]
@@ -1742,7 +1742,7 @@ for components in bplot.keys():
         line.set_color('black')
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/盒图2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/盒图2.png)
 
 ```python
 tang_data = [np.random.normal(0,std,100) for std in range(1,4)]
@@ -1754,7 +1754,7 @@ plt.ylabel('x')
 plt.title('box plot')
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/盒图3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/盒图3.png)
 
 ```python
 tang_data = [np.random.normal(0,std,100) for std in range(1,4)]
@@ -1766,7 +1766,7 @@ plt.xlabel('x')
 plt.title('box plot')
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/盒图4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/盒图4.png)
 
 ```python
 tang_data = [np.random.normal(0,std,100) for std in range(1,4)]
@@ -1782,7 +1782,7 @@ for pathch,color in zip(bplot['boxes'],colors):
     pathch.set_facecolor(color)
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/盒图5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/盒图5.png)
 
 ```python
 fig,axes = plt.subplots(nrows=1,ncols=2,figsize=(12,5))
@@ -1799,7 +1799,7 @@ for ax in axes:
 plt.setp(axes,xticks=[y+1 for y in range(len(tang_data))],xticklabels=['x1','x2','x3','x4'])
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/盒图6.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/盒图6.png)
 
 ### 5. 直方图
 
@@ -1815,7 +1815,7 @@ plt.xlim([min(data)-5,max(data)+5])
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图10.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图10.png)
 
 ```python
 import random
@@ -1829,7 +1829,7 @@ plt.legend(loc='best')
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/直方图11.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/直方图11.png)
 
 ### 6. 散点图
 
@@ -1849,7 +1849,7 @@ plt.legend(loc='best')
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/散点图1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/散点图1.png)
 
 ```python
 x_coords = [0.13, 0.22, 0.39, 0.59, 0.68, 0.74, 0.93]
@@ -1863,7 +1863,7 @@ for x,y in zip(x_coords,y_coords):
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/散点图2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/散点图2.png)
 
 ```python
 mu_vec1 = np.array([0,0])
@@ -1878,7 +1878,7 @@ plt.scatter(X[:,0],X[:,1],color='grey',marker='o',s=20*R_sum,alpha=0.5)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/散点图3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/散点图3.png)
 
 ### 7. 3D图
 
@@ -1903,7 +1903,7 @@ ax.set_zlim(-2,2)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/3d图.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/3d图.png)
 
 ```python
 fig = plt.figure()
@@ -1919,7 +1919,7 @@ ax.plot(x,y,z)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/3d图2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/3d图2.png)
 
 ```python
 np.random.seed(1)
@@ -1940,7 +1940,7 @@ ax.view_init(40,0) # 可以换方向
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/3d图3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/3d图3.png)
 
 ```python
 fig = plt.figure()  
@@ -1954,7 +1954,7 @@ for c, z in zip(['r', 'g', 'b', 'y'], [30, 20, 10, 0]):
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/3d图4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/3d图4.png)
 
 ### 8. pie与子图
 
@@ -1976,7 +1976,7 @@ for text in autotexts:
     text.set_color('white')
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/pie.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/pie.png)
 
 ```python
 ax1 = plt.subplot2grid((3,3),(0,0))
@@ -1986,7 +1986,7 @@ ax4 = plt.subplot2grid((3,3),(2,0),colspan = 2)
 ax5 = plt.subplot2grid((3,3),(0,1),rowspan=2)
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/子图1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/子图1.png)
 
 ```python
 import numpy as np
@@ -2004,7 +2004,7 @@ ax1.plot(x,y1)
 ax2.plot(x,y2)
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/子图2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/子图2.png)
 
 ```python
 import matplotlib.pyplot as plt
@@ -2043,7 +2043,7 @@ for spine in ax1.spines.values():
 autolabel(tang) 
 ```
 
-![](http://img.clint-sfy.cn/python/matplotlib/子图3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/matplotlib/子图3.png)
 
 ## Seaborn
 
@@ -2076,28 +2076,28 @@ data = np.random.normal(size=(20, 6)) + np.arange(6) / 2
 sns.boxplot(data=data)
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/风格1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/风格1.png)
 
 ```python
 sns.set_style("dark")
 sinplot()
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/风格2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/风格2.png)
 
 ```python
 sns.set_style("white")
 sinplot()
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/风格3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/风格3.png)
 
 ```python
 sns.set_style("ticks")
 sinplot()
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/风格4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/风格4.png)
 
 ```python
 sinplot()
@@ -2146,7 +2146,7 @@ current_palette = sns.color_palette()
 sns.palplot(current_palette)
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色1.png)
 
 6个默认的颜色循环主题： deep, muted, pastel, bright, dark, colorblind
 
@@ -2160,7 +2160,7 @@ sns.palplot(current_palette)
 sns.palplot(sns.color_palette("hls", 8))
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色2.png)
 
 ```python
 data = np.random.normal(size=(20, 8)) + np.arange(8) / 2
@@ -2177,13 +2177,13 @@ hls_palette()函数来控制颜色的亮度和饱和
 sns.palplot(sns.hls_palette(8, l=.7, s=.9))
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色3.png)
 
 ```python
 sns.palplot(sns.color_palette("Paired",8))
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色4.png)
 
 ####  使用xkcd颜色来命名颜色 ###
 xkcd包含了一套众包努力的针对随机RGB色的命名。产生了954个可以随时通过xdcd_rgb字典中调用的命名颜色。
@@ -2194,14 +2194,14 @@ plt.plot([0, 1], [0, 2], sns.xkcd_rgb["medium green"], lw=3)
 plt.plot([0, 1], [0, 3], sns.xkcd_rgb["denim blue"], lw=3)
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色5.png)
 
 ```python
 colors = ["windows blue", "amber", "greyish", "faded green", "dusty purple"]
 sns.palplot(sns.xkcd_palette(colors))
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色6.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色6.png)
 
 ####  连续色板
 色彩随数据变换，比如数据越来越重要则颜色越来越深
@@ -2210,14 +2210,14 @@ sns.palplot(sns.xkcd_palette(colors))
 sns.palplot(sns.color_palette("Blues"))
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色7.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色7.png)
 
 ```python
 # 如果想要翻转渐变，可以在面板名称中添加一个_r后缀
 sns.palplot(sns.color_palette("BuGn_r"))
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色8.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色8.png)
 
 #### cubehelix_palette()调色板
 色调线性变换
@@ -2228,7 +2228,7 @@ sns.palplot(sns.cubehelix_palette(8, start=.5, rot=-.75))
 sns.palplot(sns.cubehelix_palette(8, start=.75, rot=-.150))
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色9.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色9.png)
 
 ####  light_palette() 和dark_palette()调用定制连续调色板
 
@@ -2238,13 +2238,13 @@ sns.palplot(sns.dark_palette("purple"))
 sns.palplot(sns.light_palette("navy", reverse=True))
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色10.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色10.png)
 
 ```python
 sns.palplot(sns.light_palette((210, 90, 60), input="husl"))
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/调色11.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/调色11.png)
 
 ### 3. 单变量分析绘图
 
@@ -2267,21 +2267,21 @@ sns.distplot(x,kde=False)
 sns.distplot(x, bins=20, kde=False)
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/单变量分析1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/单变量分析1.png)
 
 ```python
 x = np.random.gamma(6, size=200)
 sns.distplot(x, kde=False, fit=stats.gamma)
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/单变量分析2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/单变量分析2.png)
 
 ```python
 # 观测两个变量之间的分布关系最好用散点图
 sns.jointplot(x="x", y="y", data=df);
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/单变量分析3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/单变量分析3.png)
 
 ```python
 x, y = np.random.multivariate_normal(mean, cov, 1000).T
@@ -2289,7 +2289,7 @@ with sns.axes_style("white"):
     sns.jointplot(x=x, y=y, kind="hex", color="k")
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/单变量分析4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/单变量分析4.png)
 
 ```python
 iris = sns.load_dataset("iris")
@@ -2297,7 +2297,7 @@ sns.pairplot(iris)
 # 有4个特征  观察特征之间的关系
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/单变量分析5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/单变量分析5.png)
 
 ### 4. REG
 
@@ -2427,7 +2427,7 @@ g = sns.FacetGrid(tips, col="time")
 g.map(plt.hist, "tip");
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/facet1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/facet1.png)
 
 ```python
 g = sns.FacetGrid(tips, col="sex", hue="smoker")
@@ -2435,14 +2435,14 @@ g.map(plt.scatter, "total_bill", "tip", alpha=.7)
 g.add_legend();
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/facet2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/facet2.png)
 
 ```python
 g = sns.FacetGrid(tips, row="smoker", col="time", margin_titles=True)
 g.map(sns.regplot, "size", "total_bill", color=".1", fit_reg=False, x_jitter=.1);
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/facet3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/facet3.png)
 
 ```python
 from pandas import Categorical
@@ -2454,7 +2454,7 @@ g = sns.FacetGrid(tips, row="day", row_order=ordered_days,
 g.map(sns.boxplot, "total_bill");
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/facet4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/facet4.png)
 
 ```python
 pal = dict(Lunch="seagreen", Dinner="gray")
@@ -2463,7 +2463,7 @@ g.map(plt.scatter, "total_bill", "tip", s=50, alpha=.7, linewidth=.5, edgecolor=
 g.add_legend();
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/facet5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/facet5.png)
 
 ```python
 g = sns.FacetGrid(tips, hue="sex", palette="Set1", size=5, hue_kws={"marker": ["^", "v"]})
@@ -2471,7 +2471,7 @@ g.map(plt.scatter, "total_bill", "tip", s=100, linewidth=.5, edgecolor="white")
 g.add_legend();
 ```
 
-![](http://img.clint-sfy.cn/python/seaborn/facet6.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/seaborn/facet6.png)
 
 ```python
 iris = sns.load_dataset("iris")

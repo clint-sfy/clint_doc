@@ -2,7 +2,7 @@
 
 ## 1.  线性回归原理推导
 
-![](http://img.clint-sfy.cn/python/ML/线性回归1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/线性回归1.png)
 
 ## 2.  线性回归代码实现
 
@@ -417,7 +417,7 @@ X_train, y_train = X_train[shuffle_index], y_train[shuffle_index]
 
 ### 交叉验证
 
-![](http://img.clint-sfy.cn/python/ML/模型评估1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/模型评估1.png)
 
 ```python
 y_train_5 = (y_train==5)
@@ -464,7 +464,7 @@ for train_index,test_index in skflods.split(X_train,y_train_5):
 
 ### 混淆矩阵
 
-![](http://img.clint-sfy.cn/python/ML/模型评估2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/模型评估2.png)
 
 ```python
 from sklearn.model_selection import cross_val_predict
@@ -540,7 +540,7 @@ plt.xlim([-700000, 700000])
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/模型评估3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/模型评估3.png)
 
 ```python
 def plot_precision_vs_recall(precisions, recalls):
@@ -558,7 +558,7 @@ plot_precision_vs_recall(precisions, recalls)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/模型评估4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/模型评估4.png)
 
 ### ROC曲线
 
@@ -589,7 +589,7 @@ plot_roc_curve(fpr, tpr)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/模型评估5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/模型评估5.png)
 
 ```
 虚线表示纯随机分类器的ROC曲线; 一个好的分类器尽可能远离该线（朝左上角）。
@@ -633,7 +633,7 @@ array([[4.21509616],
 
 #### 批量梯度下降计算公式
 
-![](http://img.clint-sfy.cn/python/ML/回归分析2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析2.png)
 
 ```python
 eta = 0.1 # 学习率
@@ -676,7 +676,7 @@ plot_gradient_descent(theta,eta = 0.5)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/回归分析3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析3.png)
 
 #### 随机梯度下降
 
@@ -712,7 +712,7 @@ plt.axis([0,2,0,15])
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/回归分析4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析4.png)
 
 #### MiniBatch梯度下降
 
@@ -762,7 +762,7 @@ plt.axis([3.5,4.5,2.0,4.0])
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/回归分析5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析5.png)
 
 ### 多项式回归
 
@@ -798,7 +798,7 @@ plt.legend()
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/回归分析6.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析6.png)
 
 ```python
 # 特征变换的越复杂，得到的结果过拟合风险越高，不建议做的特别复杂。
@@ -821,7 +821,7 @@ plt.legend()
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/回归分析7.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析7.png)
 
 ### 数据样本数量对结果的影响
 
@@ -851,7 +851,7 @@ plt.axis([0,80,0,3.3])
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/回归分析8.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析8.png)
 
 ### 多项式回归的过拟合风险
 
@@ -864,13 +864,13 @@ plt.axis([0,80,0,5])
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/回归分析9.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析9.png)
 
 ### 正则化
 
 对权重参数进行惩罚，让权重参数尽可能平滑一些，有两种不同的方法来进行正则化惩罚:
 
-![](http://img.clint-sfy.cn/python/ML/回归分析10.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析10.png)
 
 ```python
 from sklearn.linear_model import Ridge
@@ -902,7 +902,7 @@ plot_model(Ridge,polynomial=True,alphas = (0,10**-5,1))
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/回归分析11.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析11.png)
 
 惩罚力度越大，alpha值越大的时候，得到的决策方程越平稳。
 
@@ -917,7 +917,7 @@ plot_model(Lasso,polynomial=True,alphas = (0,10**-1,1))
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/回归分析12.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/回归分析12.png)
 
 
 
@@ -966,9 +966,9 @@ plt.title('Figure 4-21. Logistic function')
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/7.1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/7.1.png)
 
-![](http://img.clint-sfy.cn/python/ML/7.2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/7.2.png)
 
 ### 数据集
 
@@ -1013,7 +1013,7 @@ plt.axis([0,3,-0.02,1.02])
 plt.legend(loc = 'center left',fontsize = 16)
 ```
 
-![](http://img.clint-sfy.cn/python/ML/7.3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/7.3.png)
 
 ```python
 X = iris['data'][:,(2,3)]
@@ -1079,11 +1079,11 @@ plt.text(3.5,1.5,'NOT Vir',fontsize = 16,color = 'b')
 plt.text(6.5,2.3,'Vir',fontsize = 16,color = 'g')
 ```
 
-![](http://img.clint-sfy.cn/python/ML/7.4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/7.4.png)
 
 ### 多类别分类
 
-![](http://img.clint-sfy.cn/python/ML/7.5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/7.5.png)
 
 ```python
 X = iris['data'][:,(2,3)]
@@ -1130,7 +1130,7 @@ plt.axis([0, 7, 0, 3.5])
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/7.6.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/7.6.png)
 
 ## 8. 聚类算法原理
 
@@ -1204,7 +1204,7 @@ plot_clusters(X)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.1.png)
 
 ### 决策边界
 
@@ -1285,7 +1285,7 @@ plot_decision_boundaries(kmeans, X)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.2.png)
 
 ### 算法流程
 
@@ -1326,7 +1326,7 @@ plot_decision_boundaries(kmeans_iter3, X,show_xlabels=False, show_ylabels=False)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.3.png)
 
 ### 不稳定的结果
 
@@ -1348,7 +1348,7 @@ c2 = KMeans(n_clusters = 5,init='random',n_init = 1,random_state=19)
 plot_clusterer_comparison(c1,c2,X)
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.4.png)
 
 ### 评估方法
 
@@ -1392,13 +1392,13 @@ plt.axis([1,8.5,0,1300])
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.5.png)
 
 ### 轮廓系数
 
 另一种判断k值的 方法
 
-![](http://img.clint-sfy.cn/python/ML/10.6.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.6.png)
 
 ```python
 from sklearn.metrics import silhouette_score 
@@ -1421,7 +1421,7 @@ plt.plot(range(2,10),silhouette_scores,'bo-')
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.7.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.7.png)
 
 ### Kmeans存在的问题
 
@@ -1437,7 +1437,7 @@ y = np.r_[y1, y2]
 plot_data(X)
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.8.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.8.png)
 
 ```python
 # 玩赖的 初始值规定了比较合理三个中心
@@ -1457,7 +1457,7 @@ plot_decision_boundaries(kmeans_bad,X)
 plt.title('Bad - inertia = {}'.format(kmeans_bad.inertia_))
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.9.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.9.png)
 
 ### 图像分割小例子
 
@@ -1499,7 +1499,7 @@ for idx,n_clusters in enumerate(n_colors):
     plt.title('{}colors'.format(n_clusters))
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.10.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.10.png)
 
 ### 半监督学习
 
@@ -1555,7 +1555,7 @@ for index, X_representative_digit in enumerate(X_representative_digits):
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.11.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.11.png)
 
 ```python
 y_representative_digits = np.array([
@@ -1621,7 +1621,7 @@ X, y = make_moons(n_samples=1000, noise=0.05, random_state=42)
 plt.plot(X[:,0],X[:,1],'b.')
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.12.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.12.png)
 
 ```python
 from sklearn.cluster import DBSCAN
@@ -1682,7 +1682,7 @@ plot_dbscan(dbscan2, X, size=600, show_ylabels=False)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/10.13.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/10.13.png)
 
 ## 11. 决策树原理
 
@@ -1750,7 +1750,7 @@ from IPython.display import Image
 Image(filename='iris_tree.png',width=400,height=400)
 ```
 
-![](http://img.clint-sfy.cn/python/ML/13.1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/13.1.png)
 
 ### 决策边界展示
 
@@ -1796,7 +1796,7 @@ plt.title('Decision Tree decision boundaries')
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/13.2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/13.2.png)
 
 ### 概率估计
 
@@ -1844,7 +1844,7 @@ plot_decision_boundary(tree_clf2,X,y,axes=[-1.5,2.5,-1,1.5],iris=False)
 plt.title('min_samples_leaf=4')
 ```
 
-![](http://img.clint-sfy.cn/python/ML/13.3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/13.3.png)
 
 ### 对数据的敏感
 
@@ -1874,7 +1874,7 @@ plt.title('Sensitivity to training set rotation')
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/13.4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/13.4.png)
 
 ### 回归任务
 
@@ -1902,7 +1902,7 @@ from IPython.display import Image
 Image(filename="regression_tree.png",width=400,height=400,)
 ```
 
-![](http://img.clint-sfy.cn/python/ML/13.5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/13.5.png)
 
 ```python
 from sklearn.tree import DecisionTreeRegressor
@@ -1947,7 +1947,7 @@ plt.title("max_depth=3", fontsize=14)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/13.6.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/13.6.png)
 
 ```python
 tree_reg1 = DecisionTreeRegressor(random_state=42)
@@ -1980,7 +1980,7 @@ plt.title("min_samples_leaf={}".format(tree_reg2.min_samples_leaf), fontsize=14)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/13.7.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/13.7.png)
 
 ## 14. 集成算法原理
 
@@ -2000,7 +2000,7 @@ warnings.filterwarnings('ignore')
 np.random.seed(42)
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.1.png)
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -2012,7 +2012,7 @@ plt.plot(X[:,0][y==0],X[:,1][y==0],'yo',alpha = 0.6)
 plt.plot(X[:,0][y==0],X[:,1][y==1],'bs',alpha = 0.6)
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.2.png)
 
 ### 软投票与硬投票
 
@@ -2075,7 +2075,7 @@ VotingClassifier 0.912
 
 ### Bagging策略
 
-![](http://img.clint-sfy.cn/python/ML/15.3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.3.png)
 
 ```python
 from sklearn.ensemble import BaggingClassifier
@@ -2135,7 +2135,7 @@ plt.title('Decision Tree With Bagging') # 决策树集成的模型
 # Colormap颜色：https://blog.csdn.net/zhaogeng111/article/details/78419015
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.4.png)
 
 ### OOB策略
 
@@ -2207,7 +2207,7 @@ char = plt.colorbar(ticks=[rf_clf.feature_importances_.min(),rf_clf.feature_impo
 char.ax.set_yticklabels(['Not important','Very important'])
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.5.png)
 
 ### Boosting-提升策略 AdaBoost
 
@@ -2216,7 +2216,7 @@ char.ax.set_yticklabels(['Not important','Very important'])
 # 以SVM分类器为例来演示AdaBoost的基本策略
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.6.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.6.png)
 
 ```python
 from sklearn.svm import SVC
@@ -2243,7 +2243,7 @@ for subplot,learning_rate in ((121,1),(122,0.5)):
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.7.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.7.png)
 
 ```python
 from sklearn.ensemble import AdaBoostClassifier
@@ -2256,7 +2256,7 @@ ada_clf.fit(X_train,y_train)
 plot_decision_boundary(ada_clf,X,y)
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.8.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.8.png)
 
 ### Gradient Boosting
 
@@ -2330,7 +2330,7 @@ plt.ylabel("$y$", fontsize=16, rotation=0)
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.9.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.9.png)
 
 ```python
 from sklearn.ensemble import GradientBoostingRegressor
@@ -2365,7 +2365,7 @@ plot_predictions([gbrt_slow_1],X,y,axes=[-0.5,0.5,-0.1,0.8],label = 'Ensemble pr
 plt.title('learning_rate={},n_estimators={}'.format(gbrt_slow_1.learning_rate,gbrt_slow_1.n_estimators))
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.10.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.10.png)
 
 ```python
 plt.figure(figsize = (11,4))
@@ -2378,7 +2378,7 @@ plot_predictions([gbrt_slow_1],X,y,axes=[-0.5,0.5,-0.1,0.8],label = 'Ensemble pr
 plt.title('learning_rate={},n_estimators={}'.format(gbrt_slow_1.learning_rate,gbrt_slow_1.n_estimators))
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.11.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.11.png)
 
 ### 提前停止策略
 
@@ -2419,7 +2419,7 @@ plot_predictions([gbrt_best],X,y,axes=[-0.5,0.5,-0.1,0.8])
 plt.title('Best Model(%d trees)'%bst_n_estimators)
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.12.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.12.png)
 
 ```python
 gbrt = GradientBoostingRegressor(max_depth = 2,
@@ -2448,7 +2448,7 @@ print (gbrt.n_estimators)
 
 ### Stacking（堆叠集成）
 
-![](http://img.clint-sfy.cn/python/ML/15.13.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.13.png)
 
 ```python
 from sklearn.datasets import fetch_mldata
@@ -2574,11 +2574,11 @@ plt.plot(X[:,0][y==0],X[:,1][y==0],'ys')
 plt.axis([0,5.5,0,2])
 ```
 
-![](http://img.clint-sfy.cn/python/ML/15.14.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.14.png)
 
 ### 数据标准化的影响
 
-![](http://img.clint-sfy.cn/python/ML/15.15.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/15.15.png)
 
 
 
@@ -2637,7 +2637,7 @@ p（Y│X）＝p（XY）/p(X)。
 购买薯片的顾客中有50％的人购买了可乐,则置信度为50％
 ```
 
-![](http://img.clint-sfy.cn/python/ML/22.1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/22.1.png)
 
 ```
 设最小支持度为50%, 最小可信度为 50%, 则可得到 :
@@ -2710,7 +2710,7 @@ antecedents	consequents	antecedent support	consequent support	support	confidence
 
 ### 所有指标的计算公式
 
-![](http://img.clint-sfy.cn/python/ML/22.2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/22.2.png)
 
 ### 数据需转换成one-hot编码
 
@@ -2826,7 +2826,7 @@ y = label_encoder.transform(y) + 1
 #label_dict = {1: 'Setosa', 2: 'Versicolor', 3:'Virginica'}
 ```
 
-![](http://img.clint-sfy.cn/python/ML/26.1.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/26.1.png)
 
 ```python
 import numpy as np
@@ -2843,7 +2843,7 @@ Mean Vector class 2: [ 5.936  2.77   4.26   1.326]
 Mean Vector class 3: [ 6.588  2.974  5.552  2.026]
 ```
 
-![](http://img.clint-sfy.cn/python/ML/26.2.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/26.2.png)
 
 ```python
 S_W = np.zeros((4,4))
@@ -2856,7 +2856,7 @@ for cl,mv in zip(range(1,4), mean_vectors):
 print('within-class Scatter Matrix:\n', S_W)
 ```
 
-![](http://img.clint-sfy.cn/python/ML/26.3.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/26.3.png)
 
 ```python
 overall_mean = np.mean(X, axis=0)
@@ -2963,7 +2963,7 @@ def plot_step_lda():
 plot_step_lda()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/26.4.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/26.4.png)
 
 ### 官方的包
 
@@ -3012,7 +3012,7 @@ plot_step_lda()
 plot_scikit_lda(X_lda_sklearn, title='Default LDA via scikit-learn')
 ```
 
-![](http://img.clint-sfy.cn/python/ML/26.5.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/26.5.png)
 
 ## 27.主成分分析降维 PCA
 
@@ -3063,7 +3063,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/26.6.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/26.6.png)
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -3120,7 +3120,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/26.7.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/26.7.png)
 
 ```python
 matrix_w = np.hstack((eig_pairs[0][1].reshape(4,1),
@@ -3148,7 +3148,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/26.8.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/26.8.png)
 
 ```python
 plt.figure(figsize=(6, 4))
@@ -3165,7 +3165,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![](http://img.clint-sfy.cn/python/ML/26.9.png)
+![](https://cdn.staticaly.com/gh/clint-sfy/blogcdn@master/python/ML/26.9.png)
 
 ## 28. HMM
 
